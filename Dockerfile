@@ -7,6 +7,6 @@ RUN npm i --only=production
 
 COPY . .
 
-EXPOSE 3008
+EXPOSE 3010
 
 CMD ["node", "server.js"]
