@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "docker:build": "docker build -t client-service .",
     "docker:run": "docker run -p 3008:3008 -d client-service",
-    "docker:run:local": "docker run --name client-service --network bookit-network -p 3008:3008 -e AWS_ENDPOINT=http://dynamodb-local:8000 -e AWS_REGION=local -d client-service",
+    "docker:run:local": "docker run --name client-service --network bookit-network -p 3010:3010 -e AWS_ENDPOINT=http://dynamodb-local:8000 -e AWS_REGION=local -d client-service",
     "docker:stop": "docker stop client-service",
     "docker:clean": "docker rm client-service"
   },
